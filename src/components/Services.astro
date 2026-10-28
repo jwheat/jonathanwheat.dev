@@ -1,0 +1,14 @@
+---
+const services = [
+  {number:'01',icon:'⌘',title:'Web Application Development',description:'Custom PHP/Laravel applications, modern JavaScript frontends, APIs, and end-to-end feature delivery.'},
+  {number:'02',icon:'▣',title:'Mobile Application Development',description:'Cross-platform iOS and Android applications with React Native, connected to the systems your clients already use.'},
+  {number:'03',icon:'↗',title:'Legacy Modernization',description:'Debugging, refactoring, upgrades, and thoughtful improvements to established applications and codebases.'},
+  {number:'04',icon:'◇',title:'CMS & Platform Development',description:'WordPress, headless CMS, Drupal, custom functionality, and integrations with existing platforms.'},
+  {number:'05',icon:'⇄',title:'APIs & Integrations',description:'Secure REST APIs, third-party services, data synchronization, authentication, and workflow automation.'},
+  {number:'06',icon:'✓',title:'Technical Collaboration',description:'Independent delivery or seamless support for your team, from requirements and architecture through testing and deployment.'}
+];
+---
+<section class="section services-section" id="services"><div class="container">
+  <div class="section-heading"><div><p class="eyebrow">WHAT I DO</p><h2>Development expertise.<br/><em>Where you need it.</em></h2></div><p>Extra engineering capacity, specialized expertise, or someone to take ownership of a complex project. I can step in and help you deliver.</p></div>
+  <div class="service-grid">{services.map(service => <article class="service-card"><div class="service-card-top"><span class="service-icon" aria-hidden="true">{service.icon}</span><span class="service-number">{service.number}</span></div><h3>{service.title}</h3><p>{service.description}</p></article>)}</div>
+</div></section>
