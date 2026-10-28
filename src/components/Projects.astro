@@ -1,13 +1,86 @@
 ---
 const projects = [
- {num:'01',kind:'SAAS PLATFORM · MOBILE APPLICATION',title:'VenüDesk',description:'Designed, built, and operated a multi-tenant conference management platform, including a React Native companion app for iOS and Android. Supported event scheduling, speakers, attendee engagement, and ongoing operations.',result:'100 conferences supported, including Laracon 2019',tags:['Laravel','React Native','AWS','APIs']},
- {num:'02',kind:'EDUCATION · FINANCIAL INTEGRATION',title:'University Crowdfunding',description:'Developed a Laravel-based crowdfunding platform integrated with university financial systems, supporting real fundraising campaigns and institutional workflows.',result:'More than $4 million raised',tags:['Laravel','Financial integrations','Enterprise systems']},
- {num:'03',kind:'CLIENT CONSULTING · LONG-TERM SUPPORT',title:'Volunteer Management System',description:'Built and maintained software for coordinating volunteer projects, attendance, clearances, and special needs. Used by organizations including United Way of Central Pennsylvania for volunteer events.',result:'Long-running, real-world production application',tags:['PHP','Laravel','MySQL','Client collaboration']}
+  {
+    num: "01",
+    kind: "SAAS PLATFORM · MOBILE APPLICATION",
+    title: "VenüDesk",
+    description:
+      "Designed, built, and operated a multi-tenant conference management platform, including a React Native companion app for iOS and Android. Supported event scheduling, speakers, attendee engagement, and ongoing operations.",
+    result: "100 conferences supported, including Laracon 2019",
+    tags: ["Laravel", "React Native", "AWS", "APIs"],
+  },
+  {
+    num: "02",
+    kind: "EDUCATION · FINANCIAL INTEGRATION",
+    title: "University Crowdfunding",
+    description:
+      "Developed a Laravel-based crowdfunding platform integrated with university financial systems, supporting real fundraising campaigns and institutional workflows.",
+    result: "More than $4 million raised",
+    tags: ["Laravel", "Financial integrations", "Enterprise systems"],
+  },
+  {
+    num: "03",
+    kind: "CLIENT CONSULTING · LONG-TERM SUPPORT",
+    title: "Volunteer Management System",
+    description:
+      "Built and maintained software for coordinating volunteer projects, attendance, clearances, and special needs. Used by organizations including United Way of Central Pennsylvania for volunteer events.",
+    result: "Long-running, real-world production application",
+    tags: ["PHP", "Laravel", "MySQL", "Client collaboration"],
+  },
 ];
 ---
-<section class="section projects-section" id="work"><div class="container">
- <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Built for the real world.<br/><em>Proven in practice.</em></h2></div><p>Some of the applications and systems I've delivered, maintained, and supported for organizations and their users.</p></div>
- <div class="project-list">{projects.map(project => <article class="project-card"><div class="project-index">{project.num}<span class="index-rule"></span></div><div class="project-main"><p class="eyebrow">{project.kind}</p><h3>{project.title}</h3><p>{project.description}</p><div class="tags">{project.tags.map(tag => <span>{tag}</span>)}</div></div><div class="project-result"><span class="result-label">OUTCOME</span><strong>{project.result}</strong></div></article>)}</div>
- <div class="github-note">Interested in recent hands-on projects?</div>
-  <div class="github-note"><a href="https://github.com/jwheat" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a></div>
-</div></section>
+
+<section class="section projects-section" id="work">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">SELECTED WORK</p><h2>
+          Built for the real world.<br /><em>Proven in practice.</em>
+        </h2>
+      </div><p>
+        Some of the applications and systems I've delivered, maintained, and
+        supported for organizations and their users.
+      </p>
+    </div>
+    <div class="project-list">
+      {
+        projects.map((project) => (
+          <article class="project-card">
+            <>
+              <div class="project-index">
+                {project.num}
+                <span class="index-rule" />
+              </div>
+              <div class="project-main">
+                <>
+                  <p class="eyebrow">{project.kind}</p>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <div class="tags">
+                    {project.tags.map((tag) => (
+                      <span>{tag}</span>
+                    ))}
+                  </div>
+                </>
+              </div>
+              <div class="project-result">
+                <>
+                  <span class="result-label">OUTCOME</span>
+                  <strong>{project.result}</strong>
+                </>
+              </div>
+            </>
+          </article>
+        ))
+      }
+    </div>
+    <div class="github-note">Interested in recent hands-on projects?</div>
+    <div class="github-note">
+      <a
+        href="https://github.com/jwheat"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Explore my GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>

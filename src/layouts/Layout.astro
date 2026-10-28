@@ -1,21 +1,25 @@
 ---
-import '../styles/global.css';
-const { title = 'Jonathan Wheat | Independent Software Developer', description = 'Senior independent software developer helping agencies build, modernize and maintain web and mobile applications. PHP, Laravel, React Native, WordPress and integrations.' } = Astro.props;
+import "../styles/global.css";
+const {
+  title = "Jonathan Wheat | Independent Software Developer",
+  description = "Senior independent software developer helping agencies build, modernize and maintain web and mobile applications. PHP, Laravel, React Native, WordPress and integrations.",
+} = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f7f5ef" />
-  <meta name="description" content={description} />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:url" content="https://jonathanwheat.dev" />
-  <link rel="canonical" href="https://jonathanwheat.dev/" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <title>{title}</title>
-</head>
-<body><slot /></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://jonathanwheat.dev" />
+    <link rel="canonical" href="https://jonathanwheat.dev/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body><slot /></body>
 </html>

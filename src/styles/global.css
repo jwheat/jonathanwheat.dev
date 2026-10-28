@@ -545,11 +545,14 @@ h1 em,h2 em,.footer em {
     height: 68px;
   }
   .wordmark-name {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-left: 10px;
     padding-left: 10px;
   }
   .desktop-nav {
+    display: none;
+  }
+  .desktop {
     display: none;
   }
   .nav-cta {
