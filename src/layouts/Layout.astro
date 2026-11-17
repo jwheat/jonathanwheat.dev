@@ -2,7 +2,7 @@
 import "../styles/global.css";
 const {
   title = "Jonathan Wheat | Independent Software Developer",
-  description = "Senior independent software developer helping agencies build, modernize and maintain web and mobile applications. PHP, Laravel, React Native, WordPress and integrations.",
+  description = "elping agencies and businesses build, modernize, and maintain web and mobile applications. 20+ years of hands-on development experience.",
 } = Astro.props;
 ---
 
@@ -16,7 +16,11 @@ const {
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content="https://jonathanwheat.dev" />
+    <meta property="og:url" content="https://jonathanwheat.dev/" />
+    <meta property="og:image" content="https://jonathanwheat.dev/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://jonathanwheat.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>{title}</title>
